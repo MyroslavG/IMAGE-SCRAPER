@@ -4,7 +4,7 @@ import urllib.request
 import os
 
 # Make a request to the website
-url = 'https://www.bobvila.com/articles/best-eco-friendly-products/'
+url = 'WEBSITE URL YOU WANT TO SCRAPE FROM'
 
 # Send a GET request to the URL
 response = requests.get(url)
@@ -12,7 +12,7 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 # Find all image elements on the page
 img_elements = soup.find_all('img')
-save_directory = 'C:\\Users\myroslav\Desktop\CODING\SCRAPER\scraperImages'
+save_directory = 'YOUR SAVE DIRECTORY'
 
 # Save the images
 for img in img_elements:
